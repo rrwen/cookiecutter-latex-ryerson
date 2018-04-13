@@ -1,0 +1,148 @@
+%% {{cookiecutter.author}}
+%% {{cookiecutter.email}}
+
+
+% *** PACKAGES ***
+
+
+% *** amsmath ***
+%
+% Useful commands for math
+%
+% Usage:
+%
+%\begin{equation} \label{eq:1}
+%   Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
+% \end{equation}
+%
+\usepackage{amsmath}
+
+
+% ***  array ***
+%
+% Improve array and tabular formatting
+%
+\usepackage{array}
+
+
+% *** authblk ***
+%
+% Support for footnote style author/affiliation
+%
+\usepackage{authblk}
+
+
+% *** booktabs ***
+%
+% Support for better table formatting.
+%
+\usepackage{booktabs}
+
+
+% *** caption ***
+% Support for captions.
+%
+% Usage:
+%
+% \captionsetup[FLOAT_TYPE]{OPTIONS}
+%
+\usepackage{caption}
+\captionsetup[lstlisting]{
+	justification=raggedright,
+	singlelinecheck=false
+}
+
+
+% *** enumitem ***
+%
+% Support for enumeration listings.
+%
+% Usage:
+%
+% \begin{enumerate}[label=(\alph*)]
+% \item item a
+% \item item b
+% \end{enumerate}
+%
+\usepackage{enumitem}
+
+
+% *** geometry ***
+%
+% Support for images
+%
+% Usage:
+%
+% \usepackage[letterpaper, landscape, margin=2in]{geometry}
+%
+\usepackage{geometry}
+\geometry{{cookiecutter.tex_geometry}}
+
+
+% *** graphicx ***
+%
+% Support for images
+%
+% Usage:
+%
+% \includegraphics[height=1cm, width=1cm]{example-image}
+%
+\usepackage{graphicx}
+\graphicspath{{cookiecutter.tex_graphicspath}}
+\DeclareGraphicsExtensions{{cookiecutter.tex_DeclareGraphicsExtensions}}
+
+
+% *** inputenc ***
+%
+% Support for encoding
+%
+\usepackage[utf8]{inputenc}
+
+
+% *** listings ***
+%
+% Support for source code listings.
+%
+% Usage:
+%
+% \lstinputlisting[language=Python]{source_filename.py}
+% \lstinputlisting[language=Python, firstline=37, lastline=45]{source_filename.py}
+%
+\usepackage{listings}
+\lstset{
+	frame=single,
+	basicstyle=\small,
+	breaklines=true,
+	columns=fullflexible,
+	aboveskip=10pt,
+	belowskip=10pt,
+	framesep=0.1in,
+	xleftmargin=0.1in,
+	xrightmargin=0.1in
+}
+
+
+% *** natbib ***
+%
+% Support for better citations
+%
+\usepackage{natbib}
+
+
+% *** setspace ***
+%
+% Support for line spacing
+%
+\usepackage{setspace}
+\{{cookiecutter.tex_setspace}}
+
+% *** url ***
+%
+% Support for link handling and breaking
+%
+% Usage:
+%
+% \url{my_url_here}
+%
+\usepackage{url}
+
