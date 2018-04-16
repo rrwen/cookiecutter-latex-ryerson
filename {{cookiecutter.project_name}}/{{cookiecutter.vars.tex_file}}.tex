@@ -16,16 +16,25 @@
 \begin{document}
 
 \input{front_matter/title_page}
+
 \cleardoublepage
 \pagenumbering{roman}
 \setcounter{page}{2}
+
+\input{front_matter/authors_declaration}
+\input{front_matter/abstract}
+\input{front_matter/acknowledgements}
+\input{front_matter/dedication}
 \input{front_matter/table_of_contents}
+\input{front_matter/list_of_tables}
+\input{front_matter/list_of_figures}
 
 % === MAIN BODY ===
 
 \cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{1}
+
 \input{main_body/introduction}
 \input{main_body/chapter01_text}
 \input{main_body/chapter02_citations}
@@ -36,6 +45,9 @@
 
 % === BACK MATTER ===
 
+\input{back_matter/appendices}
 \input{back_matter/references}
+\input{back_matter/glossary}
+\input{back_matter/index}
 
 \end{document}
