@@ -20,7 +20,7 @@
   "font_size": "12pt",
   "spacing": ["doublespacing", "onehalfspacing", "singlespacing"],
   "figure_formats": ".pdf,.png,.jpg",
-  "reference_style": "apa",
+  "bibliography_style": "apa",
   "vars": {
     "github_url": "{{ 'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.project_name }} ",
 	"github_short": "{{ cookiecutter.github_user + '/' + cookiecutter.project_name }}",
@@ -32,7 +32,7 @@
 	"tex_setspace": "{{ cookiecutter.spacing }}",
 	"tex_graphicspath": "{% raw %}{{./main_body/figures/}}{% endraw %}",
 	"tex_DeclareGraphicsExtensions": "{{ '{' + cookiecutter.figure_formats + '}' }}",
-	"tex_bibliographystyle": "{{ '{' + cookiecutter.reference_style + '}' }}",
+	"tex_bibliographystyle": "{{ '{' + cookiecutter.bibliography_style + '}' }}",
 	"year": "{% now 'utc', '%Y' %}"
   }
 }
