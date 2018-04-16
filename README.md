@@ -4,6 +4,7 @@ Richard Wen
 rrwen.dev@gmail.com  
 
 * [Guidelines](https://www.ryerson.ca/graduate/current-students/dissertation-thesis-exams/)
+* [Sample](https://github.com/rrwen/cookiecutter-latex-ryerson/blob/master/sample.pdf)
 
 Personal template for LaTeX documents following thesis, major research papers, and dissertation submission guidelines by the Yeates School of Graduate Studies at Ryerson University.
 

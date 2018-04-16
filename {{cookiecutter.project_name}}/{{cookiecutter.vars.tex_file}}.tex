@@ -21,13 +21,25 @@
 \pagenumbering{roman}
 \setcounter{page}{2}
 
+{% if cookiecutter.include_authors_declaration == "yes" %}
 \input{front_matter/authors_declaration}
+{% endif %}
 \input{front_matter/abstract}
+{% if cookiecutter.include_acknowledgements == "yes" %}
 \input{front_matter/acknowledgements}
+{% endif %}
+{% if cookiecutter.include_dedication == "yes" %}
 \input{front_matter/dedication}
+{% endif %}
+{% if cookiecutter.include_table_of_contents == "yes" %}
 \input{front_matter/table_of_contents}
+{% endif %}
+{% if cookiecutter.include_list_of_tables == "yes" %}
 \input{front_matter/list_of_tables}
+{% endif %}
+{% if cookiecutter.include_list_of_figures == "yes" %}
 \input{front_matter/list_of_figures}
+{% endif %}
 
 % === MAIN BODY ===
 
@@ -45,9 +57,17 @@
 
 % === BACK MATTER ===
 
+{% if cookiecutter.include_appendices == "yes" %}
 \input{back_matter/appendices}
+{% endif %}
+{% if cookiecutter.include_bibliography == "yes" %}
 \input{back_matter/bibliography}
+{% endif %}
+{% if cookiecutter.include_glossary == "yes" %}
 \input{back_matter/glossary}
+{% endif %}
+{% if cookiecutter.include_index == "yes" %}
 \input{back_matter/index}
+{% endif %}
 
 \end{document}
