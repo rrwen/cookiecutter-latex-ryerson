@@ -3,7 +3,7 @@ dist: trusty
 before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
 script:
-  - git clone {{cookiecutter.github_url}} tex_setmainfont="{Liberation Sans}"
-  - cd {{cookiecutter.template_name}}
+  - git clone {{cookiecutter.vars.github_url}} tex_setmainfont="{Liberation Sans}"
+  - cd {{cookiecutter.project_name}}
   - chmod +x make.sh
   - ./make.sh

@@ -1,0 +1,41 @@
+% {{cookiecutter.author}}
+% {{cookiecutter.email}}
+
+% === FORMATTING ===
+
+\documentclass{{cookiecutter.vars.tex_documentclass}}
+\input{packages}
+\geometry{{cookiecutter.vars.tex_geometry}}
+\setmainfont{{cookiecutter.vars.tex_setmainfont}}
+\{{cookiecutter.vars.tex_setspace}}
+\graphicspath{{cookiecutter.vars.tex_graphicspath}}
+\DeclareGraphicsExtensions{{cookiecutter.vars.tex_DeclareGraphicsExtensions}}
+
+%  === FRONT MATTER ===
+
+\begin{document}
+
+\input{front_matter/title_page}
+\cleardoublepage
+\pagenumbering{roman}
+\setcounter{page}{2}
+\input{front_matter/table_of_contents}
+
+% === MAIN BODY ===
+
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{main_body/introduction}
+\input{main_body/chapter01_text}
+\input{main_body/chapter02_citations}
+\input{main_body/chapter03_equations}
+\input{main_body/chapter04_lists}
+\input{main_body/chapter05_figures}
+\input{main_body/chapter06_tables}
+
+% === BACK MATTER ===
+
+\input{back_matter/references}
+
+\end{document}
