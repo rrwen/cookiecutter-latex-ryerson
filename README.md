@@ -14,7 +14,7 @@ Personal template for LaTeX documents following thesis, major research papers, a
 ## Install
 
 1. Install [Python](https://www.python.org/downloads/)
-2. Install [cookiecutter](https://pypi.python.org/pypi/cookiecutter) via `pip`
+2. Install [cookiecutter](https://pypi.python.org/pypi/cookiecutter) with `[pip](https://docs.python.org/3/installing/)`
 3. Install [TeX Live](https://www.tug.org/texlive/acquire-netinstall.html) or [Miktex](https://miktex.org/download)
 4. Install [git](https://git-scm.com/)
 5. Add [TeX Live path](https://www.tug.org/texlive/quickinstall.html) or [Miktex path](https://miktex.org/howto/modify-path) to system or environmental paths
@@ -26,7 +26,7 @@ pip install cookiecutter
 ## Usage
 
 1. Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter) with a user input prompt
-2. Change directory to the `project_name` folder (based on user input)
+2. Change directory to the `project_name` folder (based on user input) with `[cd](https://en.wikipedia.org/wiki/Cd_(command))`
 3. Modify LaTeX files inside `front_matter`, `back_matter`, and `main_body` folders
 4. Create a PDF file from the LaTex files with `make.bat` or `make.sh`
 5. Re-create PDF file as needed with **Step 4**
@@ -56,13 +56,14 @@ You may wish to also create a Github repository for your paper:
 
 1. Ensure [git](https://git-scm.com/) is installed
 2. Change directory to the `project_name` folder
-3. Initialize the repository
-4. Add the template files to commit
+3. Initialize the repository with `[git init](https://git-scm.com/docs/git-init)`
+4. Add the template files to commit with `[git add](https://git-scm.com/docs/git-add)`
 5. Sign up for a [Github Account](https://github.com/) if you have not already
 6. Create an empty [Github repository](https://help.github.com/articles/create-a-repo/) with the same name as `project_name`
-7. Pull any changes if the Github repository is not empty
-8. Push the commit from **Step 4** to your created Github repository
-9. View your Github repository at `https://github.com/<github_user>/<project_name>`
+7. Add the empty remote repository from **Step 6** with `[git remote](https://git-scm.com/docs/git-remote)`
+8. *(Optional)* Pull any changes if the Github repository is not empty with `[git pull](https://git-scm.com/docs/git-pull)`
+9. Push the commit from **Step 4** to your created Github repository with `[git push](https://git-scm.com/docs/git-push)`
+10. View your Github repository at `https://github.com/<github_user>/<project_name>`
 
 ```
 cd project_name
