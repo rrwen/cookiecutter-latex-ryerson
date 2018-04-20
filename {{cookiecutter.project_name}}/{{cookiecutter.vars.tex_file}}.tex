@@ -5,6 +5,7 @@
 
 \documentclass{{cookiecutter.vars.tex_documentclass}}
 \input{packages}
+\input{commands}
 
 \geometry{{cookiecutter.vars.tex_geometry}}
 \setmainfont{{cookiecutter.vars.tex_setmainfont}}
@@ -54,6 +55,12 @@
 \input{front_matter/list_of_figures}
 {%- else %}
 % \input{front_matter/list_of_figures}
+{%- endif %}
+
+{%- if cookiecutter.include_appendices == "yes" %}
+\input{front_matter/list_of_appendices}
+{%- else %}
+%\input{front_matter/list_of_appendices}
 {%- endif %}
 
 % === MAIN BODY ===

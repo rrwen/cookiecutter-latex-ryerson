@@ -105,6 +105,7 @@ File | Description
 **front_matter/acknowledgements.tex** | a LaTeX file containing the acknowledgements content
 **front_matter/authors_declaration.tex** | a LaTeX file containing the declaration content
 **front_matter/dedication.tex** | a LaTeX file containing the dedication content
+**front_matter/list_of_appendices.tex** | a LaTeX file containing the automatic list of appendices using commands in `custom.tex`
 **front_matter/list_of_figures.tex** | a LaTeX file containing the [automatic list of figures](https://www.sharelatex.com/learn/Lists_of_tables_and_figures)
 **front_matter/list_of_tables.tex** | a LaTeX file containing the [automatic list of tables](https://www.sharelatex.com/learn/Lists_of_tables_and_figures)
 **front_matter/table_of_contents.tex** | a LaTeX file containing the [automatic table of contents](https://www.sharelatex.com/learn/Table_of_contents#Introduction)
@@ -120,6 +121,7 @@ File | Description
 **.gitignore** | a [gitignore file](https://git-scm.com/docs/gitignore) for manually untracking files
 **.travis.yml** | a [Travis CI file](https://docs.travis-ci.com/user/customizing-the-build) for automatic testing
 **{{cookiecutter.vars.tex_file}}.tex** | the main LaTeX file for producing the PDF (named `lastnameYear_project_name.tex`)
+**commands.tex** | a file containing [custom LaTeX commands](https://www.sharelatex.com/learn/Defining_your_own_commands)
 **LICENSE** | MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
 **make.bat** | a [Batch file](https://en.wikipedia.org/wiki/Batch_file) for creating the PDF in Windows
 **make.sh** | a [Shell Script](https://en.wikipedia.org/wiki/Shell_script) for creating the PDF in Linux/Mac

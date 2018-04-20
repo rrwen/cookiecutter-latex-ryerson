@@ -7,49 +7,49 @@
 \chapter*{Appendices} \label{appendices}
 \addcontentsline{toc}{chapter}{Appendices}
 
-\renewcommand{\thesection}{\Alph{section}}
+\renewcommand\thefigure{\theappendices.\arabic{figure}}
+\renewcommand\thetable{\theappendices.\arabic{table}}
+
 \setcounter{figure}{0}
-\renewcommand\thefigure{\thesection.\arabic{figure}}
 \setcounter{table}{0}
-\renewcommand\thetable{\thesection.\arabic{table}}
 
 This is the appendices section of the back matter. It contains samples of different uses of LaTeX.
 
 % === TEXT ===
 
-\section{Text} \label{text}
+\appendices{Text} \label{text}
 
 This appendix provides samples of text usage in LaTeX.
 
-\subsection{Bold Text} \label{bold-text}
+\subappendices{Bold Text} \label{bold-text}
 
 \textbf{Bold} paragraph text.
 
-\subsection{Italicized Text} \label{italicized-text}
+\subappendices{Italicized Text} \label{italicized-text}
 
 \textit{Italicized} paragraph text.
 
-\subsection{Underlined Text} \label{underlined-text}
+\subappendices{Underlined Text} \label{underlined-text}
 
 \underline{Underline} paragraph text.
 
 % === CITATIONS ===
 
-\section{Citations} \label{citations}
+\appendices{Citations} \label{citations}
 
 This appendix provides samples of citation usage in LaTeX.
 
-\subsection{Bracket Citations} \label{bracket-citations}
+\subappendices{Bracket Citations} \label{bracket-citations}
 
 Citation \citep{lastnamep:yearp}. Multiple Citation \citep{lastnamep:yearp,lastnamee:yeare,lastnamea:yeara}.
 
-\subsection{Direct Citations} \label{direct-citations}
+\subappendices{Direct Citations} \label{direct-citations}
 
 Citation \citet{lastnamep:yearp}. Multiple Citation \citet{lastnamep:yearp,lastnamee:yeare,lastnamea:yeara}.
 
 % === EQUATIONS ===
 
-\section{Equations} \label{equations}
+\appendices{Equations} \label{equations}
 
 This appendix provide a sample of equation usage in LaTeX.
 
@@ -62,7 +62,7 @@ Reference Equation \ref{eq:1}.
 
 % === FIGURES ===
 
-\section{Figures} \label{figures}
+\appendices{Figures} \label{figures}
 
 This appendix provides a sample of graphic usage in LaTeX.
 
@@ -76,25 +76,25 @@ Reference Figure \ref{figure:1}.
 
 % === LISTS ===
 
-\section{Lists} \label{lists}
+\appendices{Lists} \label{lists}
 
 This appendix provides samples of list usage in LaTeX.
 
-\subsection{Unordered Lists} \label{unordered-lists}
+\subappendices{Unordered Lists} \label{unordered-lists}
 
 \begin{itemize}
 	\item Item entry
 	\item Item entry
 \end{itemize}
 
-\subsection{Ordered Lists} \label{ordered-lists}
+\subappendices{Ordered Lists} \label{ordered-lists}
 
 \begin{enumerate}
 	\item Item 1
 	\item Item 2
 \end{enumerate}
 
-\subsection{Alphabetical Lists} \label{alphabetical-list}
+\subappendices{Alphabetical Lists} \label{alphabetical-list}
 
 \begin{enumerate}[label=(\alph*)]
 	\item Item a
@@ -103,11 +103,11 @@ This appendix provides samples of list usage in LaTeX.
 
 % === TABLES ===
 
-\section{Tables} \label{tables}
+\appendices{Tables} \label{tables}
 
 This appendix provides a sample of table usage in LaTeX.
 
-\begin{table}[hb] \centering
+\begin{table}[H] \centering
 \caption{\textbf{Table title.} Table text.}
 \label{table:1}
 \begin{tabular}{ p{2in} p{2in} p{2in} } 
