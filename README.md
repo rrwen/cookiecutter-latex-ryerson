@@ -28,8 +28,8 @@ pip install cookiecutter
 1. Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter) with a user input prompt
 2. Change directory to the `project_name` folder (based on user input)
 3. Modify LaTeX files inside `front_matter`, `back_matter`, and `main_body` folders
-4. Create a PDF file from the LaTex files
-5. Re-create PDF file as needed after editing with the `make.bat` or `make.sh` file
+4. Create a PDF file from the LaTex files with `make.bat` or `make.sh`
+5. Re-create PDF file as needed with **Step 4**
 
 In windows:
 
