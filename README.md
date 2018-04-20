@@ -95,13 +95,11 @@ The following files will be created inside a folder with the same name as the `p
 
 File | Description
 --- | ---
-**back_matter/** | folder for back matter content
 **back_matter/appendices.tex** | a LaTeX file containing the appendices content
 **back_matter/bibliography.bib** | a [BibTeX](http://www.bibtex.org/Format/) file for storing references
 **back_matter/bibliography.tex** | a LaTeX file containing the [automatic bibliography](http://www.bibtex.org/Using/)
 **back_matter/glossary.tex** | a LaTeX file containing the glossary content
 **back_matter/index.tex** | a LaTeX file containing the index content
-**front_matter/** | folder for front matter content
 **front_matter/abstract.tex** | a LaTeX file containing the abstract content
 **front_matter/acknowledgements.tex** | a LaTeX file containing the acknowledgements content
 **front_matter/authors_declaration.tex** | a LaTeX file containing the declaration content
@@ -110,7 +108,6 @@ File | Description
 **front_matter/list_of_tables.tex** | a LaTeX file containing the [automatic list of tables](https://www.sharelatex.com/learn/Lists_of_tables_and_figures)
 **front_matter/table_of_contents.tex** | a LaTeX file containing the [automatic table of contents](https://www.sharelatex.com/learn/Table_of_contents#Introduction)
 **front_matter/title_page.tex** | a LaTeX file containing the [title page](https://en.wikibooks.org/wiki/LaTeX/Title_Creation)
-**main_body/** | folder for main body content
 **main_body/figures/** | folder for figure image files (.pdf, .png, .jpg)
 **main_body/figures/graphic.pdf** | sample figure image in .pdf format
 **main_body/chapter01_background.tex** | a LaTeX file containing the background content
@@ -121,7 +118,7 @@ File | Description
 **main_body/introduction.tex** | a LaTeX file containing the introduction content
 **.gitignore** | a [gitignore file](https://git-scm.com/docs/gitignore) for manually untracking files
 **.travis.yml** | a [Travis CI file](https://docs.travis-ci.com/user/customizing-the-build) for automatic testing
-**{{cookiecutter.vars.tex_file}}.tex** | the main LaTeX file for producing the PDF (named `lastnameYear_project_name`)
+**{{cookiecutter.vars.tex_file}}.tex** | the main LaTeX file for producing the PDF (named `lastnameYear_project_name.tex`)
 **LICENSE** | MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
 **make.bat** | a [Batch file](https://en.wikipedia.org/wiki/Batch_file) for creating the PDF in Windows
 **make.sh** | a [Shell Script](https://en.wikipedia.org/wiki/Shell_script) for creating the PDF in Linux/Mac
