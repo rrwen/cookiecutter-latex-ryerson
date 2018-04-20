@@ -20,11 +20,12 @@
 
 ### PDF Creation
 
-1. [Clone](https://git-scm.com/docs/git-clone) this repository
-2. Create [{{cookiecutter.vars.tex_file}}.pdf](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/{{cookiecutter.vars.tex_file}}.pdf)
-3. Re-create [{{cookiecutter.vars.tex_file}}.pdf](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/{{cookiecutter.vars.tex_file}}.pdf) as needed with **Step 2**
+1. [Clone](https://git-scm.com/docs/git-clone) this repository with [git clone](https://git-scm.com/docs/git-clone)
+2. Change directory to `{{cookiecutter.project_name}}` folder with [cd](https://en.wikipedia.org/wiki/Cd_(command))
+3. Create [{{cookiecutter.vars.tex_file}}.pdf](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/{{cookiecutter.vars.tex_file}}.pdf) with [make.bat](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/make.bat) or  [make.sh](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/make.sh)
+4. Re-create [{{cookiecutter.vars.tex_file}}.pdf](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/{{cookiecutter.vars.tex_file}}.pdf) as needed with **Step 2**
 
-In Windows (see [make.bat](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/make.bat)):
+In Windows:
 
 ```
 git clone {{cookiecutter.vars.github_url}}
@@ -32,7 +33,7 @@ cd {{cookiecutter.project_name}}
 make
 ```
 
-In Linux/Mac (see [make.sh](https://github.com/{{cookiecutter.vars.github_short}}/blob/master/make.sh)):
+In Linux/Mac:
 
 ```
 git clone {{cookiecutter.vars.github_url}}
