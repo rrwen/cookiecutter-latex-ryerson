@@ -37,7 +37,7 @@
     "tex_setmainfont": "{{ '{'+ cookiecutter.font_style + '}' }}",
 	"tex_geometry": "{{ '{paperwidth=' + cookiecutter.paper_width + ',paperheight=' + cookiecutter.paper_height + ',margin=' + cookiecutter.paper_margin + '}' }}",
 	"tex_setspace": "{{ cookiecutter.spacing }}",
-	"tex_graphicspath": "{% raw %}{{./main_body/figures/}}{% endraw %}",
+	"tex_graphicspath": "{% raw %}{{./figures/}}{% endraw %}",
 	"tex_DeclareGraphicsExtensions": "{{ '{' + cookiecutter.figure_formats + '}' }}",
 	"tex_bibliographystyle": "{{ '{' + cookiecutter.bibliography_style + '}' }}",
 	"year": "{% now 'utc', '%Y' %}"
