@@ -28,6 +28,7 @@
   "include_appendices": ["yes", "no"],
   "include_glossary": ["yes", "no"],
   "include_index": ["yes", "no"],
+  "include_list_of_code": ["yes", "no"],
   "vars": {
     "github_url": "{{ 'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.project_name }} ",
 	"github_short": "{{ cookiecutter.github_user + '/' + cookiecutter.project_name }}",

@@ -1,17 +1,40 @@
 % {{cookiecutter.author}}
 % {{cookiecutter.email}}
 
+%  === COMMANDS ===
+
+% --- \appendices ---
+\newcommand{\appendices}[1]{
+	\setcounter{section}{0}
+	\setcounter{figure}{0}
+	\setcounter{table}{0}
+	\refstepcounter{appendices}
+	\par\chapter*{Appendix \theappendices. #1}
+	\addcontentsline{loa}{section}
+	{\protect\numberline{\theappendices}#1}\par
+}
+\renewcommand{\theappendices}{\Alph{appendices}}
+
+% --- \subappendices ---
+\newcommand{\subappendices}[1]{
+	\refstepcounter{section}
+	\par\section*{\theappendices\thesection. #1}
+	\addcontentsline{loa}{subsection}
+	{\protect\numberline{\theappendices\thesection}#1}\par
+}
+
+% --- Change figure, table, code numbering ---
+
+\renewcommand\thefigure{\theappendices.\arabic{figure}}
+\renewcommand\thetable{\theappendices.\arabic{table}}
+\counterwithout{lstlisting}{section}
+\renewcommand\thelstlisting{\theappendices.\arabic{lstlisting}}
+
 % === APPENDICES ===
 
 \appendix
 \chapter*{Appendices} \label{appendices}
 \addcontentsline{toc}{chapter}{Appendices}
-
-\renewcommand\thefigure{\theappendices.\arabic{figure}}
-\renewcommand\thetable{\theappendices.\arabic{table}}
-
-\setcounter{figure}{0}
-\setcounter{table}{0}
 
 This is the appendices section of the back matter. It contains samples of different uses of LaTeX.
 
@@ -128,3 +151,23 @@ This appendix provides a sample of table usage in LaTeX.
 \end{table}
 
 Reference Table \ref{table:1}.
+
+% === CODE LISTINGS ===
+
+\appendices{Code Listings} \label{code-listings}
+
+This appendix provides a sample of code listings usage in LaTeX.
+
+\subappendices{Raw Code} \label{raw-code}
+
+\begin{lstlisting}[language=python, caption={Hello world example in Python}, label={list:raw-example}]
+print('hello world!')
+\end{lstlisting}
+
+Reference Code \ref{list:raw-example}.
+
+\subappendices{Code From File} \label{code-from-file}
+
+\lstinputlisting[language=python, caption={code/helloworld.py}, label={list:file-example}]{code/helloworld.py}
+
+Reference Code \ref{list:file-example}.

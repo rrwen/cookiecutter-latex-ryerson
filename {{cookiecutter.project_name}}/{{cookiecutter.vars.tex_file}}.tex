@@ -3,14 +3,22 @@
 
 % === FORMATTING ===
 
+% --- Document ---
+
 \documentclass{{cookiecutter.vars.tex_documentclass}}
 \input{packages}
 
 \geometry{{cookiecutter.vars.tex_geometry}}
 \setmainfont{{cookiecutter.vars.tex_setmainfont}}
 \{{cookiecutter.vars.tex_setspace}}
+
+% --- Graphics ---
+
 \graphicspath{{cookiecutter.vars.tex_graphicspath}}
 \DeclareGraphicsExtensions{{cookiecutter.vars.tex_DeclareGraphicsExtensions}}
+
+% --- Links ---
+
 \hypersetup{
 	colorlinks,
 	citecolor=black,
@@ -19,7 +27,35 @@
 	urlcolor=black
 }
 
+% --- Code ---
+
+{% if cookiecutter.include_list_of_code == "yes" -%}
+\lstdefinestyle{style}{
+	frame=tb,
+	captionpos=b,
+	framesep=12pt,
+	showstringspaces=false
+}
+\lstset{style=style}
+\AtBeginDocument{\counterwithin{lstlisting}{section}}
+{%- else -%}
+% \lstdefinestyle{style}{
+%		frame=tb,
+%		captionpos=b,
+%		framesep=12pt,
+% 	showstringspaces=false
+% }
+% \lstset{style=style}
+% \AtBeginDocument{\counterwithin{lstlisting}{section}}
+{%- endif %}
+
 %  === FRONT MATTER ===
+
+{% if cookiecutter.include_index == "yes" -%}
+\makeindex
+{%- else -%}
+% \makeindex
+{%- endif %}
 
 \begin{document}
 
@@ -54,6 +90,12 @@
 \input{front_matter/list_of_figures}
 {%- else %}
 % \input{front_matter/list_of_figures}
+{%- endif %}
+
+{%- if cookiecutter.include_list_of_code == "yes" %}
+\input{front_matter/list_of_code}
+{%- else %}
+% \input{front_matter/list_of_code}
 {%- endif %}
 
 {%- if cookiecutter.include_appendices == "yes" %}
