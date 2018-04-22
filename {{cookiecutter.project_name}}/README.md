@@ -16,7 +16,8 @@
 
 1. Install [TeX Live](https://www.tug.org/texlive/acquire-netinstall.html) or [Miktex](https://miktex.org/download)
 2. Install [git](https://git-scm.com/)
-3. Add [TeX Live path](https://www.tug.org/texlive/quickinstall.html) or [Miktex path](https://miktex.org/howto/modify-path) to system or environmental paths
+3. Install [perl](https://www.perl.org/)
+4. Add [TeX Live path](https://www.tug.org/texlive/quickinstall.html) or [Miktex path](https://miktex.org/howto/modify-path) to system or environmental paths
 
 ### PDF Creation
 

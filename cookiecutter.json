@@ -26,6 +26,7 @@
   "include_list_of_tables": ["yes", "no"],
   "include_list_of_figures": ["yes", "no"],
   "include_appendices": ["yes", "no"],
+  "include_acronyms": ["yes", "no"],
   "include_glossary": ["yes", "no"],
   "include_index": ["yes", "no"],
   "include_list_of_code": ["yes", "no"],

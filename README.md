@@ -17,7 +17,8 @@ Personal template for LaTeX documents following thesis, major research papers, a
 2. Install [cookiecutter](https://pypi.python.org/pypi/cookiecutter) with [pip](https://docs.python.org/3/installing/)
 3. Install [TeX Live](https://www.tug.org/texlive/acquire-netinstall.html) or [Miktex](https://miktex.org/download)
 4. Install [git](https://git-scm.com/)
-5. Add [TeX Live path](https://www.tug.org/texlive/quickinstall.html) or [Miktex path](https://miktex.org/howto/modify-path) to system or environmental paths
+5. Install [perl](https://www.perl.org/)
+6. Add [TeX Live path](https://www.tug.org/texlive/quickinstall.html) or [Miktex path](https://miktex.org/howto/modify-path) to system or environmental paths
 
 ```
 pip install cookiecutter

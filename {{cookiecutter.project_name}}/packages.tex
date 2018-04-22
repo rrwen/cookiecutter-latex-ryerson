@@ -40,10 +40,6 @@
 % \captionsetup[FLOAT_TYPE]{OPTIONS}
 %
 \usepackage{caption}
-\captionsetup[lstlisting]{
-	justification=raggedright,
-	singlelinecheck=false
-}
 
 % === chngcntr ===
 %
@@ -75,6 +71,12 @@
 % Support for fonts
 %
 \usepackage{fontspec}
+
+% === glossaries ===
+%
+% Support for glossaries and acronyms
+%
+\usepackage[toc,acronym]{glossaries}
 
 % === geometry ===
 %
@@ -124,17 +126,6 @@
 % \lstinputlisting[language=Python, firstline=37, lastline=45]{source_filename.py}
 %
 \usepackage{listings}
-\lstset{
-	frame=single,
-	basicstyle=\small,
-	breaklines=true,
-	columns=fullflexible,
-	aboveskip=10pt,
-	belowskip=10pt,
-	framesep=0.1in,
-	xleftmargin=0.1in,
-	xrightmargin=0.1in
-}
 
 % === natbib ===
 %
