@@ -34,44 +34,19 @@
 	frame=tb,
 	captionpos=b,
 	framesep=12pt,
-	showstringspaces=false,
-	frame=single,
-	basicstyle=\small,
-	breaklines=true,
-	columns=fullflexible,
-	aboveskip=10pt,
-	belowskip=10pt,
-	framesep=0.1in,
-	xleftmargin=0.1in,
-	xrightmargin=0.1in
+	showstringspaces=false
 }
 \lstset{style=style}
 \AtBeginDocument{\counterwithin{lstlisting}{section}}
-\captionsetup[lstlisting]{
-	justification=raggedright,
-	singlelinecheck=false
-}
 {%- else -%}
 % \lstdefinestyle{style}{
 %		frame=tb,
 %		captionpos=b,
 %		framesep=12pt,
-% 	showstringspaces=false,
-% 	basicstyle=\small,
-% 	breaklines=true,
-% 	columns=fullflexible,
-% 	aboveskip=10pt,
-% 	belowskip=10pt,
-% 	framesep=0.1in,
-% 	xleftmargin=0.1in,
-% 	xrightmargin=0.1in
+% 	showstringspaces=false
 % }
 % \lstset{style=style}
 % \AtBeginDocument{\counterwithin{lstlisting}{section}}
-% \captionsetup[lstlisting]{
-%		justification=raggedright,
-% 	singlelinecheck=false
-% }
 {%- endif %}
 
 %  === FRONT MATTER ===
