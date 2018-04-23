@@ -11,6 +11,6 @@ install:
   - pip install cookiecutter
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-latex-ryerson tex_setmainfont="{Liberation Sans}"
-  - cd template_name
+  - cd sample
   - chmod +x make.sh
   - ./make.sh
