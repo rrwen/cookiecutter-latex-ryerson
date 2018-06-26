@@ -9,6 +9,6 @@ makeglossaries -d log {{cookiecutter.vars.tex_file}}
 {%- else %}
 REM makeglossaries -d log {{cookiecutter.vars.tex_file}}
 {%- endif %}
-bibtex log/{{cookiecutter.vars.tex_file}} 
+biber log/{{cookiecutter.vars.tex_file}} 
 xelatex {{cookiecutter.vars.tex_file}}  -aux-directory=log -interaction=nonstopmode -halt-on-error
 xelatex {{cookiecutter.vars.tex_file}}  -aux-directory=log -interaction=nonstopmode -halt-on-error

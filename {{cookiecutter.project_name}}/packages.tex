@@ -25,6 +25,12 @@
 %
 \usepackage{authblk}
 
+% === babel ===
+%
+% Support for multilanguage typographic rules and hyphens
+%
+\usepackage[english]{babel}
+
 % === booktabs ===
 %
 % Support for better table formatting.
@@ -127,11 +133,15 @@
 %
 \usepackage{listings}
 
-% === natbib ===
+% === biblatex ===
 %
 % Support for better citations
 %
-\usepackage{natbib}
+\usepackage[
+	natbib=true,
+	style=apa
+]{biblatex}
+\bibliography{back_matter/bibliography.bib}
 
 % === setspace ===
 %

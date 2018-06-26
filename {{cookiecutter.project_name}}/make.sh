@@ -10,6 +10,6 @@ makeglossaries {{cookiecutter.vars.tex_file}}
 {%- else %}
 # makeglossaries {{cookiecutter.vars.tex_file}}
 {%- endif %}
-bibtex {{cookiecutter.vars.tex_file}}
+biber {{cookiecutter.vars.tex_file}}
 xelatex {{cookiecutter.vars.tex_file}} -interaction=nonstopmode -halt-on-error
 xelatex {{cookiecutter.vars.tex_file}} -interaction=nonstopmode -halt-on-error
