@@ -41,7 +41,6 @@
 	"tex_setspace": "{{ cookiecutter.spacing }}",
 	"tex_graphicspath": "{% raw %}{{./figures/}}{% endraw %}",
 	"tex_DeclareGraphicsExtensions": "{{ '{' + cookiecutter.figure_formats + '}' }}",
-	"tex_bibliographystyle": "{{ '{' + cookiecutter.bibliography_style + '}' }}",
 	"year": "{% now 'utc', '%Y' %}"
   }
 }
