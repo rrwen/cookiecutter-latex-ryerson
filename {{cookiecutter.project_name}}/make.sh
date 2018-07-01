@@ -1,6 +1,6 @@
 #!/bin/sh
 mkdir -p log
-xelatex -output-directory=log -aux-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
+xelatex -output-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
 {%- if cookiecutter.include_index == "yes" %}
 makeindex log/{{cookiecutter.vars.tex_file}}
 {%- else %}
@@ -12,6 +12,6 @@ makeglossaries -d log {{cookiecutter.vars.tex_file}}
 # makeglossaries -d log {{cookiecutter.vars.tex_file}}
 {%- endif %}
 biber log/{{cookiecutter.vars.tex_file}}
-xelatex -output-directory=log -aux-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
-xelatex -output-directory=log -aux-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
+xelatex -output-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
+xelatex -output-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
 mv log/{{cookiecutter.vars.tex_file}}.pdf {{cookiecutter.vars.tex_file}}.pdf
