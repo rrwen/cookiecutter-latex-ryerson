@@ -1,15 +1,17 @@
 #!/bin/sh
-xelatex {{cookiecutter.vars.tex_file}} -interaction=nonstopmode -halt-on-error
+mkdir -p log
+xelatex -output-directory=log -aux-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
 {%- if cookiecutter.include_index == "yes" %}
-makeindex {{cookiecutter.vars.tex_file}}
+makeindex log/{{cookiecutter.vars.tex_file}}
 {%- else %}
-# makeindex {{cookiecutter.vars.tex_file}}
+# makeindex log/{{cookiecutter.vars.tex_file}}
 {%- endif %}
 {%- if cookiecutter.include_glossary == "yes" or  cookiecutter.include_acronyms == "yes" %}
-makeglossaries {{cookiecutter.vars.tex_file}}
+makeglossaries -d log {{cookiecutter.vars.tex_file}}
 {%- else %}
-# makeglossaries {{cookiecutter.vars.tex_file}}
+# makeglossaries -d log {{cookiecutter.vars.tex_file}}
 {%- endif %}
-biber {{cookiecutter.vars.tex_file}}
-xelatex {{cookiecutter.vars.tex_file}} -interaction=nonstopmode -halt-on-error
-xelatex {{cookiecutter.vars.tex_file}} -interaction=nonstopmode -halt-on-error
+biber log/{{cookiecutter.vars.tex_file}}
+xelatex -output-directory=log -aux-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
+xelatex -output-directory=log -aux-directory=log -interaction=nonstopmode -halt-on-error {{cookiecutter.vars.tex_file}}
+mv log/{{cookiecutter.vars.tex_file}}.pdf {{cookiecutter.vars.tex_file}}.pdf
